@@ -20,6 +20,11 @@ nav{
     color: white;
 }
 
+#navbar{
+    position: fixed;
+    top: 0;
+}
+
 /*********Welcome Section********/
 #welcome-section{
     text-align: center;
@@ -171,7 +176,51 @@ h2#project-title{
   #email-icon{
       color: #ea4335;
   }
+/*******End Of Contacts Section*********/
 
+/*******ATHLETICS PAGE*********/
+.olympics-container{
+    padding-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    padding-bottom: 50px;
+}
+
+#header-title{
+  padding-top: 100px; 
+  text-align: center; 
+}
+
+.video-title{
+    padding-top: 20px;
+    margin-bottom: -20px;
+    text-align: center;
+}
+
+textarea{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+/*******END OF ATHLETICS PAGE*********/
+
+/*******PAGE NUMBERS*********/
+.page-numbers{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.page-numbers a:link{
+    color: black;
+}
+
+.page-numbers a:visited{
+    color: blue;
+}
+/*******END OF PAGE NUMBERS*********/
 
 /* Media Queries */
 @media only screen and (max-width: 768px){
