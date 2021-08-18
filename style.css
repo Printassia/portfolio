@@ -1,0 +1,249 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+/******Navbar******/
+nav{
+    text-align: right;
+    background-color: #4b778d; 
+    padding: 15px 0px; 
+    position: fixed;
+    width: 100%;
+}
+.nav-link{
+    padding-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+}
+
+/*********Welcome Section********/
+#welcome-section{
+    text-align: center;
+    padding: 100px;
+    background-color: #28b5b5;
+    font-family: 'Playfair Display', serif;
+    
+}
+#welcome-title{
+    margin-top: 200px;
+    font-size: 50px;
+    color: white;
+}
+#welcome-subtitle{
+    line-height: .1;
+    margin-bottom: 280px;
+    font-size: 40px;
+    color: #4b778d;
+}
+
+/*********Projects Section********/
+#project-title{
+text-align: center;
+padding-top: 100px;
+padding-bottom: 30px;
+}
+
+h2#project-title{
+    letter-spacing: 4px;
+    color: white;
+}
+
+#project-section{
+    background-color: #8fd9a8;
+    margin-top: -20px;
+    padding-bottom: 200px;
+}
+.project-link{
+    color: rgb(79, 79, 231);
+    text-align: center;
+}
+/* Tribute Image */
+#project-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.project-images{
+    width: 600px;
+}
+
+#runfasttrackclub-img,
+#tribute-img,
+#java-calculator-img,
+#wicom-img,
+#physical-fitness-img,
+#product-landing-img,
+#technical-doc{
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+/*******Contacts Section*********/
+#contact-section{
+    background-color: #d2e69c;
+    margin-top: -100px;
+    padding-bottom: 180px;
+}
+
+#contact-title{
+    text-align: center;
+    padding-top: 300px;
+    font-size: 50px;
+}
+
+.contact-icons{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    margin-bottom: 100px ;
+    
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    padding-left: 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltiptext{
+  font-size: 12px;
+  }
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #github-icon{
+      color: #211F1F;
+  }
+
+  #fcc-icon{
+    color: #006400;
+  }
+
+  #linkedin-icon{
+      color: #0077b5;
+  }
+
+  #youtube-icon{
+      color: #cd201f;
+  }
+
+  #email-icon{
+      color: #ea4335;
+  }
+/*******End Of Contacts Section*********/
+
+/*******ATHLETICS PAGE*********/
+.olympics-container{
+    padding-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+    padding-bottom: 50px;
+}
+
+#header-title{
+  padding-top: 100px; 
+  text-align: center; 
+}
+
+.video-title{
+    padding-top: 20px;
+    text-align: center;
+}
+
+textarea{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+/*******END OF ATHLETICS PAGE*********/
+
+/*******PAGE NUMBERS*********/
+.page-numbers{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.page-numbers a:link{
+    color: black;
+}
+
+.page-numbers a:visited{
+    color: blue;
+}
+/*******END OF PAGE NUMBERS*********/
+
+/* Media Queries */
+@media only screen and (max-width: 768px){
+   #welcome-subtitle{
+       line-height: 1;
+   }
+    .project-images{
+        width: 80%;
+    }
+
+    #welcome-title{
+        margin-top: 50px;
+    }
+
+    .contact-icons{
+        display: grid;
+    }
+
+    #contact-title{
+        padding-top: 100px;
+    }
+  
+  .contact-icons{
+        margin-bottom: -140px;
+    }
+  
+}
